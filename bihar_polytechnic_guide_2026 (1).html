@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bihar Polytechnic Complete Counselling Guide 2026. Everything about admission, cutoff, counselling, colleges, and branch selection.">
+    <title>Bihar Polytechnic Complete Counselling Guide 2026</title>
+    
+    <style>
+        /* ==========================================================================
+           सीएसएस वेरिएबल्स (CSS VARIABLES) - लाइट और डार्क मोड के लिए
+           ========================================================================== */
+        :root {
+            --primary: #0066cc;
+            --primary-hover: #004499;
+            --text-main: #1d1d1f;
+            --text-muted: #515154;
+            --bg-base: #f5f5f7;
+            --glass-bg: rgba(255, 255, 255, 0.75);
+            --glass-border: rgba(255, 255, 255, 0.5);
+            --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+            --border-radius: 24px;
+            --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            --nav-height: 70px;
+        }
+
+        /* डार्क मोड वेरिएबल्स (Dark Mode Variables) */
+        body.dark-mode {
+            --primary: #2997ff;
+            --primary-hover: #147ce5;
+            --text-main: #f5f5f7;
+            --text-muted: #a1a1a6;
+            --bg-base: #000000;
+            --glass-bg: rgba(30, 30, 32, 0.75);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+            transition: background-color 0.5s ease, color 0.5s ease;
+            padding-top: var(--nav-height); /* टॉप नेविगेशन के लिए जगह */
+        }
+
+        /* एम्बिएंट बैकग्राउंड (Ambient Premium Background Gradients) */
+        .ambient-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            overflow: hidden;
+            background: var(--bg-base);
+            transition: background-color 0.5s ease;
+        }
+
+        .ambient-bg::before,
+        .ambient-bg::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.6;
+            transition: all 0.5s ease;
+        }
+
+        .ambient-bg::before {
+            top: -10%;
+            left: -10%;
+            width: 70vw;
+            height: 70vw;
+            background: radial-gradient(circle, rgba(64,156,255,0.4) 0%, rgba(255,255,255,0) 70%);
+        }
+
+        .ambient-bg::after {
+            bottom: -10%;
+            right: -10%;
+            width: 60vw;
+            height: 60vw;
+            background: radial-gradient(circle, rgba(255,94,142,0.3) 0%, rgba(255,255,255,0) 70%);
+        }
+
+        /* डार्क मोड के लिए एम्बिएंट बैकग्राउंड अपडेट */
+        body.dark-mode .ambient-bg::before {
+            background: radial-gradient(circle, rgba(0,102,204,0.3) 0%, rgba(0,0,0,0) 70%);
+        }
+        body.dark-mode .ambient-bg::after {
+            background: radial-gradient(circle, rgba(168,43,81,0.3) 0%, rgba(0,0,0,0) 70%);
+        }
+
+        /* ==========================================================================
+           टॉप नेविगेशन और नोटिफिकेशन बार (TOP NAV & NOTIFICATIONS)
+           ========================================================================== */
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: var(--nav-height);
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: var(--transition);
+        }
+
+        .notifications-container {
+            display: flex;
+            gap: 16px;
+            overflow-x: auto;
+            white-space: nowrap;
+            -ms-overflow-style: none; /* IE & Edge */
+            scrollbar-width: none; /* Firefox */
+            padding-right: 20px;
+        }
+        .notifications-container::-webkit-scrollbar { display: none; }
+
+        .notify-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 59, 48, 0.1);
+            border: 1px solid rgba(255, 59, 48, 0.2);
+            color: #ff3b30;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        body.dark-mode .notify-badge {
+            background: rgba(255, 69, 58, 0.15);
+            color: #ff453a;
+        }
+
+        .notify-badge:hover {
+            background: rgba(255, 59, 48, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #ff3b30;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 0 rgba(255, 59, 48, 0.7);
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.7); }
+            70% { box-shadow: 0 0 0 8px rgba(255, 59, 48, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 59, 48, 0); }
+        }
+
+        /* डार्क मोड टॉगल बटन */
+        .theme-toggle-btn {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-main);
+            transition: var(--transition);
+            background: rgba(128, 128, 128, 0.1);
+            flex-shrink: 0;
+        }
+
+        .theme-toggle-btn:hover {
+            background: rgba(128, 128, 128, 0.2);
+            transform: scale(1.05);
+        }
+
+        .theme-toggle-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        /* ==========================================================================
+           टाइपोग्राफी और लेआउट (TYPOGRAPHY & LAYOUT)
+           ========================================================================== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+
+        h1 { 
+            font-size: clamp(2.5rem, 5vw, 4.5rem); 
+            background: linear-gradient(135deg, var(--text-main) 0%, #888 100%); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            transition: all 0.5s ease;
+        }
+        h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 24px;}
+        h3 { font-size: 1.5rem; }
+        p { margin-bottom: 16px; color: var(--text-muted); font-size: 1.125rem;}
+        
+        .text-center { text-align: center; }
+        .mt-4 { margin-top: 2rem; }
+        .mb-4 { margin-bottom: 2rem; }
+
+        /* ==========================================================================
+           कम्पोनेंट्स (COMPONENTS)
+           ========================================================================== */
+        /* ग्लासमॉर्फिज़्म कार्ड (Glassmorphism Card) */
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--border-radius);
+            padding: 40px;
+            box-shadow: var(--glass-shadow);
+            margin-bottom: 40px;
+            transition: var(--transition);
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        body.dark-mode .glass-card:hover {
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        /* प्रीमियम बटन्स (Premium Buttons) */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 32px;
+            font-size: 1.125rem;
+            font-weight: 600;
+            border-radius: 999px;
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            gap: 12px;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: #fff;
+            box-shadow: 0 4px 14px rgba(0, 102, 204, 0.3);
+        }
+
+        body.dark-mode .btn-primary {
+            box-shadow: 0 4px 14px rgba(41, 151, 255, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-hover);
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(0, 102, 204, 0.4);
+            color: #fff;
+        }
+
+        .btn-primary svg {
+            fill: none;
+            stroke: currentColor;
+            width: 20px;
+            height: 20px;
+        }
+
+        /* ग्रिड्स (Grids) */
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; }
+        
+        /* लिस्ट स्टाइल (Lists) */
+        ul { list-style: none; margin-bottom: 24px; }
+        ul li { position: relative; padding-left: 32px; margin-bottom: 12px; font-size: 1.125rem; color: var(--text-muted); }
+        ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* नंबर वाले स्टेप्स (Numbered Steps) */
+        .step-list { counter-reset: step-counter; list-style: none; }
+        .step-list li {
+            position: relative;
+            padding-left: 48px;
+            margin-bottom: 20px;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+        .step-list li::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: -2px;
+            width: 32px;
+            height: 32px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        /* ब्रांच कार्ड स्टाइल (Specific Branch Card Styling) */
+        .branch-card { padding: 32px; }
+        .branch-meta { margin-top: 24px; }
+        .branch-meta-item {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--glass-border);
+        }
+        .branch-meta-item:last-child { border-bottom: none; }
+        .branch-meta-title { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: var(--primary); font-weight: 700; margin-bottom: 4px; }
+
+        /* एकॉर्डियन / प्रश्न-उत्तर (Accordion / FAQ) */
+        .faq-item {
+            border-bottom: 1px solid var(--glass-border);
+            margin-bottom: 16px;
+        }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            padding: 20px 0;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-main);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-icon {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+        .faq-answer-inner {
+            padding-bottom: 24px;
+            color: var(--text-muted);
+        }
+        .faq-item.active .faq-icon { transform: rotate(45deg); }
+
+        /* स्क्रॉल एनीमेशन (Scroll Reveal Animation) */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* सेक्शन मार्जिन (Sections) */
+        section { padding: 80px 0; }
+        .hero { min-height: 90vh; display: flex; align-items: center; text-align: center; padding-top: 20px; }
+        .hero-illustration { width: 100%; max-width: 500px; margin: 40px auto; }
+        
+        footer {
+            text-align: center;
+            padding: 60px 24px;
+            border-top: 1px solid var(--glass-border);
+            margin-top: 60px;
+        }
+
+        /* मोबाइल एडजस्टमेंट (Mobile Adjustments) */
+        @media (max-width: 768px) {
+            section { padding: 50px 0; }
+            .glass-card { padding: 24px; }
+            .btn { width: 100%; }
+            h1 { font-size: 2.2rem; }
+            .top-nav { padding: 0 16px; }
+            .notifications-container { flex-wrap: nowrap; overflow-x: scroll; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- एम्बिएंट बैकग्राउंड (Ambient Background) -->
+    <div class="ambient-bg"></div>
+
+    <!-- ==================================================
+         टॉप नेविगेशन और नोटिफिकेशन (TOP NAV & NOTIFICATION)
+         ================================================== -->
+    <nav class="top-nav">
+        <div class="notifications-container">
+            <!-- नोटिफिकेशन 1 : PE काउंसलिंग -->
+            <a href="#section-5" class="notify-badge">
+                <span class="pulse-dot"></span>
+                बिहार पॉलिटेक्निक PE काउंसलिंग स्टार्ट
+            </a>
+            <!-- नोटिफिकेशन 2 : LE काउंसलिंग -->
+            <a href="#section-6" class="notify-badge">
+                <span class="pulse-dot"></span>
+                बिहार पॉलिटेक्निक LE काउंसलिंग स्टार्ट
+            </a>
+        </div>
+        
+        <!-- डार्क मोड टॉगल बटन -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode">
+            <!-- Sun Icon (दिखेगा जब डार्क मोड ऑन हो) -->
+            <svg id="icon-sun" style="display: none;" viewBox="0 0 24 24">
+                <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+            <!-- Moon Icon (दिखेगा जब लाइट मोड ऑन हो) -->
+            <svg id="icon-moon" viewBox="0 0 24 24">
+                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- ==================================================
+         हीरो सेक्शन (HERO SECTION)
+         ================================================== -->
+    <header class="hero container reveal">
+        <div style="max-width: 900px; margin: 0 auto;">
+            <h1>Bihar Polytechnic Complete Counselling Guide 2026</h1>
+            <p style="font-size: 1.5rem; margin-top: 24px; color: var(--text-main);">Everything About Bihar Polytechnic Admission, Cutoff, Counselling, Colleges, Branch Selection and Admission Process.</p>
+            
+            <div class="hero-illustration">
+                <!-- Abstract Educational SVG -->
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#0066cc;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#00d2ff;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="grad2" x1="100%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#ff5e8e;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#ff9966;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <g transform="translate(50, 20)">
+                        <rect x="20" y="80" width="260" height="160" rx="16" fill="url(#grad1)" opacity="0.15"/>
+                        <rect x="40" y="60" width="260" height="160" rx="16" fill="var(--glass-bg)" stroke="var(--glass-border)" stroke-width="2" filter="drop-shadow(0 10px 20px rgba(0,0,0,0.1))"/>
+                        <circle cx="240" cy="110" r="40" fill="url(#grad2)" opacity="0.8"/>
+                        <path d="M70 100 h100 v10 h-100 z M70 130 h140 v10 h-140 z M70 160 h120 v10 h-120 z" fill="var(--text-muted)"/>
+                        <path d="M90 220 L150 140 L210 220 Z" fill="url(#grad1)" opacity="0.9"/>
+                    </g>
+                </svg>
+            </div>
+
+            <a href="#section-1" class="btn btn-primary mt-4" id="start-btn">
+                Start Reading
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- ==================================================
+             SECTION 1 — 2025 CUTOFF ANALYSIS
+             ================================================== -->
+        <section id="section-1" class="reveal">
+            <div class="glass-card">
+                <h2>2025 Cutoff Analysis</h2>
+                <p><strong>What is Cutoff?</strong> The closing rank at which the last seat is allotted in a particular college and branch.</p>
+                <p><strong>How is it decided?</strong> It is generated automatically by the counseling software based on seat availability and student preferences.</p>
+                <p><strong>Previous Year Trend:</strong> Due to increased awareness, top branches like Civil and Electrical in top 10 colleges closed very early.</p>
+                <p><strong>Expected 2026 Cutoff:</strong> Competition is expected to rise. A safe rank for a good government college is under 15,000.</p>
+                
+                <div style="background: rgba(255, 94, 142, 0.1); padding: 20px; border-radius: 12px; margin: 24px 0; border-left: 4px solid #ff5e8e;">
+                    <p style="margin:0; color: #ff453a;"><strong>Important Note:</strong> Nobody can guarantee the exact cutoff. It dynamically depends on:</p>
+                    <ul style="margin-top: 12px; margin-bottom: 0;">
+                        <li>Number of Students appearing</li>
+                        <li>Difficulty Level of the exam</li>
+                        <li>Seat Availability</li>
+                        <li>Reservation Category constraints</li>
+                        <li>Choice Filling patterns of students</li>
+                        <li>Counselling Round (1st, 2nd, or Mop-up)</li>
+                    </ul>
+                </div>
+                
+                <a href="https://drive.google.com/file/d/1hD07kTZzwZlxS_ZMHpGnxfRhd0HcQNCe/view?usp=drivesdk" target="_blank" rel="noopener" class="btn btn-primary">
+                    View 2025 Cutoff PDF
+                    <svg viewBox="0 0 24 24"><path d="M12 4v12M8 12l4 4 4-4M4 20h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             SECTION 2 — TOP GOVERNMENT COLLEGES
+             ================================================== -->
+        <section id="section-2" class="reveal">
+            <div class="glass-card">
+                <h2>Top Government Polytechnic Colleges</h2>
+                <p>Government polytechnic colleges are highly preferred by students in Bihar. Here is why you should prioritize them:</p>
+                
+                <div class="grid-2 mt-4 mb-4">
+                    <div>
+                        <ul>
+                            <li><strong>Low Fee:</strong> Highly affordable compared to private institutes.</li>
+                            <li><strong>Government Degree:</strong> Highly valued in PSUs and Govt jobs.</li>
+                            <li><strong>Placement Opportunities:</strong> Better campus drives.</li>
+                            <li><strong>Hostel:</strong> Cheap and secure accommodation.</li>
+                            <li><strong>Scholarship:</strong> State and central schemes easily available.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><strong>Experienced Faculty:</strong> BPSC qualified professors.</li>
+                            <li><strong>Labs:</strong> Well-funded practical laboratories.</li>
+                            <li><strong>Practical Learning:</strong> Industrial training tie-ups.</li>
+                            <li><strong>Government Recognition:</strong> AICTE & SBTE approved.</li>
+                            <li><strong>Better Career:</strong> High respect in the technical market.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a href="https://drive.google.com/file/d/1N-YD0fTeoW-fdLD5508VMlYkoeszRwXm/view?usp=drivesdk" target="_blank" rel="noopener" class="btn btn-primary">
+                    Top 10 Government Polytechnic Colleges
+                    <svg viewBox="0 0 24 24"><path d="M12 4v12M8 12l4 4 4-4M4 20h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             SECTION 3 — TOTAL AVAILABLE COLLEGES
+             ================================================== -->
+        <section id="section-3" class="reveal">
+            <div class="glass-card">
+                <h2>Total Available Colleges</h2>
+                <p>Bihar has a wide network of technical institutes. Understanding the matrix is crucial for choice filling.</p>
+                
+                <ul>
+                    <li><strong>Government Colleges:</strong> Over 40+ Govt. Polytechnic (NGP) & Govt. Women's Polytechnic (GWP) across the state.</li>
+                    <li><strong>Private Colleges:</strong> Numerous AICTE-approved private institutes for those who miss out on Govt seats.</li>
+                    <li><strong>District-wise Colleges:</strong> Almost every district in Bihar now has at least one Government Polytechnic.</li>
+                    <li><strong>Available Seats:</strong> More than 12,000+ seats in Govt. colleges across various branches.</li>
+                    <li><strong>Why Choice Filling is Important:</strong> Filling maximum choices increases your probability of seat allotment. Even with a high rank, smart choice filling can secure a seat.</li>
+                </ul>
+
+                <a href="https://drive.google.com/file/d/1GChnFp7o8szJ4pXgBBDDCM0vwb2u5Qqc/view?usp=drivesdk" target="_blank" rel="noopener" class="btn btn-primary mt-4">
+                    View All Colleges
+                    <svg viewBox="0 0 24 24"><path d="M12 4v12M8 12l4 4 4-4M4 20h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             SECTION 4 — BCECEB OFFICIAL WEBSITE
+             ================================================== -->
+        <section id="section-4" class="reveal">
+            <div class="glass-card text-center">
+                <h2>BCECEB Official Board</h2>
+                <p><strong>What is BCECEB?</strong> The Bihar Combined Entrance Competitive Examination Board conducts the DCECE (PE/PPE/PM/PMM) and LE exams.</p>
+                <p>It is the sole authority for Latest Notifications, Results, Online Counselling, Seat Allotment, Downloads, and Official Notices.</p>
+                
+                <a href="https://bceceboard.bihar.gov.in/" target="_blank" rel="noopener" class="btn btn-primary mt-4">
+                    Visit Official Website
+                    <svg viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             SECTION 5 — PE COUNSELLING
+             ================================================== -->
+        <section id="section-5" class="reveal">
+            <div class="glass-card" style="border: 1px solid var(--primary);">
+                <h2>PE (Polytechnic Engineering) Counselling</h2>
+                <p><strong>What is PE?</strong> A 3-year Diploma course in various engineering branches after 10th grade.</p>
+                <p><strong>Who can apply? / Eligibility:</strong> Students who have passed 10th standard (Matriculation) with a minimum of 35% marks.</p>
+                
+                <h3 class="mt-4">Step-by-Step Counselling Process</h3>
+                <ol class="step-list">
+                    <li>Registration with Roll Number and Date of Birth</li>
+                    <li>Login using created credentials</li>
+                    <li>Choice Filling (Select colleges and branches)</li>
+                    <li>Choice Locking (OTP verified)</li>
+                    <li>Seat Allotment Result Declaration</li>
+                    <li>Seat Acceptance (Willingness for Upgradation: Yes/No)</li>
+                    <li>Seat Acceptance Fee Payment (Online)</li>
+                    <li>Document Verification at Reporting Center</li>
+                    <li>Reporting to the Allotted College</li>
+                    <li>Final Admission process</li>
+                </ol>
+
+                <a href="https://admissions.nic.in/bihar/applicant/root/home.aspx?enc=89xw0ctRCXfaXHy3CACizBv3STpzp0gmriwwA/xEJOmSIpKXQbSm7LyRPbvqtm5DYGSTNsoOuaVdstsOYydGKw==" target="_blank" rel="noopener" class="btn btn-primary mt-4">
+                    Open PE Counselling
+                    <svg viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             SECTION 6 — LE COUNSELLING
+             ================================================== -->
+        <section id="section-6" class="reveal">
+            <div class="glass-card" style="border: 1px solid #ff9966;">
+                <h2>LE (Lateral Entry) Counselling</h2>
+                <p><strong>What is LE?</strong> Lateral Entry allows direct admission into the 2nd year (3rd semester) of the 3-year Diploma program.</p>
+                <p><strong>Who can apply? / Eligibility:</strong> 12th Science passed students OR 10th + 2 Years ITI passed students.</p>
+                <p><strong>Direct 2nd Year Admission:</strong> Saves one academic year for eligible candidates.</p>
+                
+                <h3 class="mt-4">Counselling Steps</h3>
+                <ol class="step-list">
+                    <li>Registration on the LE Portal</li>
+                    <li>Choice Filling of preferred colleges</li>
+                    <li>Seat Allotment Publication</li>
+                    <li>Document Verification at nodal center</li>
+                    <li>Reporting to the allotted institution</li>
+                    <li>Final Admission</li>
+                </ol>
+
+                <a href="https://admissions.nic.in/bihar/applicant/root/home.aspx?enc=k5U5Gp8NR6abhZ8Lld4oWvvSsCkKcG+Kcizck0pVdCvJE10jNAB9fCwdCq9SngLzb4Gzi4tBqgNhSeiZhqEIBQ==" target="_blank" rel="noopener" class="btn btn-primary mt-4">
+                    Open LE Counselling
+                    <svg viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             SECTION 7 & 8 — AFTER ADMISSION STEPS
+             ================================================== -->
+        <div class="grid-2 reveal">
+            <!-- SECTION 7 -->
+            <section id="section-7" style="padding: 0;">
+                <div class="glass-card" style="height: 100%;">
+                    <h2>After PE Admission</h2>
+                    <ul class="step-list" style="margin-top: 24px;">
+                        <li>Download Provisional Allotment Letter</li>
+                        <li>Pay Admission Fee at College</li>
+                        <li>Submit Original Documents for Verification</li>
+                        <li>Submit Medical Fitness Certificate</li>
+                        <li>Submit Character & Migration Certificates</li>
+                        <li>Apply for Hostel Admission (if required)</li>
+                        <li>Purchase College Uniform</li>
+                        <li>Buy Textbooks & Instruments</li>
+                        <li>Collect Student ID Card</li>
+                        <li>Check Academic Calendar</li>
+                        <li>Attend First Day of Class</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SECTION 8 -->
+            <section id="section-8" style="padding: 0;">
+                <div class="glass-card" style="height: 100%;">
+                    <h2>After LE Admission</h2>
+                    <ul class="step-list" style="margin-top: 24px;">
+                        <li>Confirm Direct Entry in 2nd Year (3rd Sem)</li>
+                        <li>Report to Assigned Department HOD</li>
+                        <li>Complete Academic Verification</li>
+                        <li>Complete 3rd Semester Registration</li>
+                        <li>Pay Semester/Admission Fee</li>
+                        <li>Procure Core Subject Books</li>
+                        <li>Register for Laboratories</li>
+                        <li>Note down the Time Table</li>
+                        <li>Obtain Student ID Card</li>
+                        <li>Commence Classes immediately</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!-- ==================================================
+             SECTION 9 — BEST ENGINEERING BRANCHES
+             ================================================== -->
+        <section id="section-9" class="reveal">
+            <h2 class="text-center mb-4">Best Engineering Branches</h2>
+            
+            <div class="grid-2">
+                <!-- Civil -->
+                <div class="glass-card branch-card">
+                    <h3>Civil Engineering</h3>
+                    <div class="branch-meta">
+                        <div class="branch-meta-item"><div class="branch-meta-title">Overview</div> Deals with design, construction, and maintenance of infrastructure.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Future Scope</div> Evergreen branch, continuous infrastructure development in India.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Government Jobs</div> PWD, NHAI, Railways, CPWD, Water Resources, BPSC (AE/JE).</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Private Jobs</div> L&T, Tata Projects, Real Estate Developers, Architecture firms.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Higher Education</div> B.Tech (Lateral Entry), M.Tech.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Expected Salary</div> ₹3L - ₹6L PA (Starting).</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Required Skills</div> Project management, AutoCAD, physical stamina, math.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Advantages</div> Highest government job vacancies.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Disadvantages</div> Field job, requires exposure to sun/dust.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Who Should Choose</div> Students aiming strictly for permanent Govt. Jobs (JE).</div>
+                    </div>
+                </div>
+
+                <!-- Electrical -->
+                <div class="glass-card branch-card">
+                    <h3>Electrical Engineering</h3>
+                    <div class="branch-meta">
+                        <div class="branch-meta-item"><div class="branch-meta-title">Overview</div> Study of electrical systems, power generation, and machinery.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Future Scope</div> EVs, Renewable energy, Smart Grids.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Government Jobs</div> BSPHCL, NTPC, Power Grid, Railways (Loco Pilot/JE).</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Private Jobs</div> Tata Power, Adani Electricity, Manufacturing plants.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Higher Education</div> B.Tech (EE/EEE).</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Expected Salary</div> ₹3L - ₹5.5L PA (Starting).</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Required Skills</div> Analytical thinking, circuits knowledge, safety awareness.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Advantages</div> Great balance of Govt and Private sector jobs.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Disadvantages</div> Risky work environment sometimes.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Who Should Choose</div> Students interested in core engineering and power sectors.</div>
+                    </div>
+                </div>
+
+                <!-- Mechanical -->
+                <div class="glass-card branch-card">
+                    <h3>Mechanical Engineering</h3>
+                    <div class="branch-meta">
+                        <div class="branch-meta-item"><div class="branch-meta-title">Overview</div> Design, analysis, and manufacturing of machinery.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Future Scope</div> Robotics, Aerospace, Automation, HVAC.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Government Jobs</div> Railways (ALP/JE), DRDO, ISRO, ONGC, SAIL.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Private Jobs</div> Tata Motors, Maruti Suzuki, Hero, Manufacturing Hubs.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Higher Education</div> B.Tech (ME/Auto).</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Expected Salary</div> ₹2.5L - ₹5L PA (Starting).</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Required Skills</div> Physics, 3D modelling (SolidWorks), problem-solving.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Advantages</div> Very broad field, applicable everywhere.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Disadvantages</div> High competition, tough curriculum.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Who Should Choose</div> Machine lovers and automotive enthusiasts.</div>
+                    </div>
+                </div>
+
+                <!-- Computer Science -->
+                <div class="glass-card branch-card">
+                    <h3>Computer Science Eng.</h3>
+                    <div class="branch-meta">
+                        <div class="branch-meta-item"><div class="branch-meta-title">Overview</div> Software development, programming, networks.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Future Scope</div> AI, Web3, Cybersecurity, Cloud Computing.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Government Jobs</div> NIC, IT Departments, Banking IT Officer (Limited for Diploma).</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Private Jobs</div> TCS, Wipro, Infosys, Tech Startups, MNCs.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Higher Education</div> B.Tech (CSE/IT) - Highly recommended.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Expected Salary</div> ₹3L - ₹8L PA (Highest potential in private).</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Required Skills</div> Coding (C, Python, Java), Logic, Continuous Learning.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Advantages</div> High salary, AC office job, Work from home options.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Disadvantages</div> Very few Government Jobs for Diploma level.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Who Should Choose</div> Tech-savvy students wanting to enter the IT sector.</div>
+                    </div>
+                </div>
+                
+                <!-- Electronics -->
+                <div class="glass-card branch-card">
+                    <h3>Electronics Engineering</h3>
+                    <div class="branch-meta">
+                        <div class="branch-meta-item"><div class="branch-meta-title">Overview</div> Electronic circuits, microprocessors, communication.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Future Scope</div> IoT, 5G/6G Telecom, Semiconductor manufacturing.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Government Jobs</div> BSNL, Railways (S&T), BEL, AAI.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Private Jobs</div> Samsung, Intel, Jio, Airtel, Hardware startups.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Higher Education</div> B.Tech (ECE).</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Expected Salary</div> ₹3L - ₹5L PA (Starting).</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Required Skills</div> Circuit design, Embedded C, precision.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Advantages</div> India's push for semiconductor manufacturing will create jobs.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Disadvantages</div> Can be academically challenging.</div>
+                        <div class="branch-meta-item"><div class="branch-meta-title">Who Should Choose</div> Students interested in gadgets, robotics, and communication.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             SECTION 10 — REQUIRED DOCUMENTS
+             ================================================== -->
+        <section id="section-10" class="reveal">
+            <div class="glass-card">
+                <h2>Required Documents (Checklist)</h2>
+                <p>Keep these documents ready in original and multiple photocopies.</p>
+                <div class="grid-2 mt-4">
+                    <ul>
+                        <li>10th Marksheet & Passing Certificate</li>
+                        <li>DCECE Admit Card</li>
+                        <li>DCECE Rank Card</li>
+                        <li>Aadhaar Card</li>
+                        <li>Income Certificate (Recent)</li>
+                        <li>Caste Certificate (If applicable)</li>
+                    </ul>
+                    <ul>
+                        <li>Residential/Domicile Certificate</li>
+                        <li>6 Passport Size Photos (Same as admit card)</li>
+                        <li>Character Certificate (From last school)</li>
+                        <li>Migration/SLC Certificate (Original)</li>
+                        <li>Medical Fitness Certificate (Registered Doctor)</li>
+                        <li>Part A & Part B Application Form Copy</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             SECTION 11 — IMPORTANT TIPS
+             ================================================== -->
+        <section id="section-11" class="reveal">
+            <div class="glass-card" style="background: rgba(0, 102, 204, 0.05); border-color: rgba(0, 102, 204, 0.2);">
+                <h2 style="color: var(--primary);">Important Tips for Candidates</h2>
+                <ul>
+                    <li><strong>Fill Maximum Choices:</strong> Do not restrict yourself to 5-10 colleges. Fill as many choices as you can to avoid missing out.</li>
+                    <li><strong>Don't Lock Without Checking:</strong> Review your choice order multiple times. Top preference should be #1. Once locked, it cannot be edited.</li>
+                    <li><strong>Follow Official Notice:</strong> Only trust dates and rules published on the official BCECEB website. Do not rely on WhatsApp rumors.</li>
+                    <li><strong>Keep Documents Ready:</strong> Certificates like Income and Caste take time to generate from the Block office. Apply early.</li>
+                    <li><strong>Keep Fee Ready:</strong> The seat acceptance fee and college admission fee must be paid on time. Arrange funds beforehand.</li>
+                    <li><strong>Check Every Counselling Round:</strong> If not allotted in Round 1, wait for Round 2 and Mop-up counseling patiently.</li>
+                    <li><strong>Don't Miss Reporting Date:</strong> Missing the document verification date at the nodal center will result in seat cancellation.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             SECTION 12 — FREQUENTLY ASKED QUESTIONS (25)
+             ================================================== -->
+        <section id="section-12" class="reveal">
+            <h2>Frequently Asked Questions</h2>
+            <div class="glass-card" id="faq-container">
+                <!-- FAQs विल बी जेनरेटेड वाया जावास्क्रिप्ट (FAQs will be generated via JS) -->
+            </div>
+        </section>
+
+        <!-- ==================================================
+             SECTION 13 & 14 — DISCLAIMER & CONTACT
+             ================================================== -->
+        <footer class="reveal">
+            <h3 style="margin-bottom: 8px;">LK STUDY STUDIO</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 24px;">Educational Purpose Only</p>
+            <div style="max-width: 600px; margin: 0 auto; font-size: 0.85rem; color: var(--text-muted);">
+                <strong>Disclaimer:</strong> Cutoff predictions, admission steps, and branch information are based on previous years' trends and general data. Final admission depends entirely on BCECEB norms, official counselling processes, and your rank. Always verify with official board notifications.
+            </div>
+            <p style="margin-top: 24px; font-size: 0.8rem;">&copy; 2026 Bihar Polytechnic Complete Counselling Guide.</p>
+        </footer>
+
+    </main>
+
+    <!-- ==========================================================================
+         जावास्क्रिप्ट (JAVASCRIPT)
+         ========================================================================== -->
+    <script>
+        // 1. डार्क मोड टॉगल लॉजिक (Dark Mode Toggle Logic)
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const iconSun = document.getElementById('icon-sun');
+        const iconMoon = document.getElementById('icon-moon');
+        const body = document.body;
+
+        // लोकल स्टोरेज से पिछली थीम चेक करें
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-mode');
+            iconMoon.style.display = 'none';
+            iconSun.style.display = 'block';
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            
+            // आइकॉन स्विच करें
+            if (body.classList.contains('dark-mode')) {
+                iconMoon.style.display = 'none';
+                iconSun.style.display = 'block';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                iconMoon.style.display = 'block';
+                iconSun.style.display = 'none';
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // 2. 25 FAQs जेनरेट करना (Generate 25 FAQs)
+        const faqs = [
+            { q: "1. What is the official website for counselling?", a: "The official website is bceceboard.bihar.gov.in." },
+            { q: "2. Is there any negative marking in the PE exam?", a: "No, there is no negative marking in the Bihar Polytechnic entrance exam." },
+            { q: "3. What is Auto-Upgradation?", a: "If you are not satisfied with your allotted seat in Round 1, you can choose 'Yes' for auto-upgradation to get a higher preferred choice in Round 2." },
+            { q: "4. Can I change choices after locking?", a: "No. Once choices are locked and the deadline is crossed, they cannot be modified under any circumstances." },
+            { q: "5. What is the fee for Government Polytechnic?", a: "The approximate fee is between ₹2,000 to ₹3,000 per year, making it highly affordable." },
+            { q: "6. Are hostel facilities available for 1st-year students?", a: "Yes, most government colleges provide hostels, but allotment is based on availability and distance." },
+            { q: "7. Do I need a Migration Certificate?", a: "Yes, you need a Migration or School Leaving Certificate (SLC/CLC) from the last institution you attended." },
+            { q: "8. What is the format for the Medical Certificate?", a: "It should be issued by a registered medical practitioner (MBBS) stating that you are physically and mentally fit for technical studies." },
+            { q: "9. Is an EWS certificate mandatory?", a: "Only if you belong to the General category and have claimed EWS reservation during the application." },
+            { q: "10. What if I miss Round 1 reporting?", a: "Your allotted seat will be cancelled, and you may not be considered for Round 2. Always report on time." },
+            { q: "11. Can other state students apply?", a: "No, Bihar Polytechnic seats are reserved for candidates who fulfill the domicile criteria of Bihar." },
+            { q: "12. What is the Mop-up round?", a: "It is an offline/online spot round conducted at the end to fill any remaining vacant seats." },
+            { q: "13. Can I do B.Tech after Diploma?", a: "Yes, through the BCECE (LE) exam, you can get direct admission to the 2nd year of B.Tech in Bihar Engineering Colleges." },
+            { q: "14. Which branch has the highest placement?", a: "Generally, Computer Science and Mechanical branches see good campus placements, though Civil has more Govt. jobs." },
+            { q: "15. Is there a dress code in Polytechnic?", a: "Yes, most Government Polytechnics have a specific uniform (usually formal shirt and trousers) that students must wear." },
+            { q: "16. Is Anti-ragging affidavit required?", a: "Yes, you will need to submit an anti-ragging affidavit signed by you and your parents during admission." },
+            { q: "17. What is the medium of instruction?", a: "Classes and exams are generally conducted in a mix of Hindi and English, but technical terms are in English." },
+            { q: "18. Does gap year affect admission?", a: "No, a gap year does not affect admission, but you might need to submit a Gap Certificate/Affidavit." },
+            { q: "19. Will I get a scholarship?", a: "Yes, eligible SC/ST/OBC and EBC students can apply for the Post Matric Scholarship (PMS)." },
+            { q: "20. How many choices can I fill?", a: "There is no limit. You can fill all available colleges and branches in your preference order." },
+            { q: "21. Can I change my branch in the 2nd year?", a: "Branch change is generally not allowed in Bihar Polytechnic after final admission." },
+            { q: "22. What happens to my original documents?", a: "Original SLC/CLC and Migration are retained by the college. Other originals are returned after verification." },
+            { q: "23. Is laptop mandatory for students?", a: "It is highly recommended, especially for Computer Science and Electronics students, but not strictly mandatory in the first year." },
+            { q: "24. How many semesters are there in PE?", a: "The 3-year PE course consists of 6 semesters (2 semesters per year)." },
+            { q: "25. Who conducts the semester exams?", a: "The State Board of Technical Education (SBTE), Bihar conducts the semester exams." }
+        ];
+
+        const faqContainer = document.getElementById('faq-container');
+        
+        faqs.forEach((faq, index) => {
+            const faqHtml = `
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ${faq.q}
+                        <svg class="faq-icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">${faq.a}</div>
+                    </div>
+                </div>
+            `;
+            faqContainer.insertAdjacentHTML('beforeend', faqHtml);
+        });
+
+        // 3. एकॉर्डियन एनीमेशन (Accordion Logic)
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentNode;
+                const answer = button.nextElementSibling;
+                const isOpen = item.classList.contains('active');
+
+                // अन्य सभी टैब बंद करें
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                });
+
+                if (!isOpen) {
+                    item.classList.add('active');
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                }
+            });
+        });
+
+        // 4. स्मूथ स्क्रॉलिंग (Smooth Scrolling for Anchor Links)
+        // ऊपर नोटिफिकेशन पर क्लिक करने पर सीधे उस सेक्शन में जाने के लिए।
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                
+                // टॉप नेविगेशन बार की ऊंचाई (Height) को माइनस करके स्क्रॉल करें
+                const topNavHeight = document.querySelector('.top-nav').offsetHeight;
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - topNavHeight - 20;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 5. स्क्रॉल एनीमेशन (Scroll Reveal Animation)
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealOptions = {
+            threshold: 0.15,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); // एक बार दिखने के बाद ऑब्जर्व करना बंद करें
+                }
+            });
+        }, revealOptions);
+
+        revealElements.forEach(el => {
+            revealOnScroll.observe(el);
+        });
+
+        // पेज लोड होते ही हीरो सेक्शन का एनीमेशन ट्रिगर करें
+        window.addEventListener('load', () => {
+            document.querySelector('.hero').classList.add('active');
+        });
+
+    </script>
+</body>
+</html>
